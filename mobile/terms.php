@@ -1,6 +1,10 @@
 <?php include 'header.php'; ?>
 
+<body onload="showLabels(a)" >
+ 
+
 <!-- start  main section here -->
+
 
 <div class="content">
 
@@ -12,6 +16,8 @@
 <p class="peas1" id="spImagine" > 
 
 </aside>
+
+
 
 
 <!-- Content Starts Here -->
@@ -30,7 +36,11 @@
             <p>Enjoy!</p>
             
             <p></p>
-                  
+            
+           
+                    
+            
+                    
           
         </div>
    
@@ -46,7 +56,12 @@
 </aside>
 
 
+
+
+
 </div>
+
+
 
 <!-- Content Ends Here -->
 </div>

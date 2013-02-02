@@ -8,23 +8,9 @@
 
 <a
 
-	data-ajax="false"
+data-ajax="false"
 	
 href="productList.php" >Product List</a></li>
-
-
-<li>
-
-<a
-
-	data-ajax="false"
-	
-	
-
-
-href="productCatalog.php" >ProductCatalog</a></li>
-
-
 
 
 </ul>

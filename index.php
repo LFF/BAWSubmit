@@ -80,9 +80,9 @@ include 'header.php'; ?>
 
 <li><a id="imagine" class="circles"
 
-onmouseover="playSound('http://localhost/GuitarBuddy/media/String2B.mp3');"
+onmouseover="playSound('http://localhost/GuitarBuddy/media/String1E.mp3');"
  
-onclick="playSound('http://localhost/GuitarBuddy/media/String2B.mp3');"
+onclick="playSound('http://localhost/GuitarBuddy/media/String1E.mp3');"
  
 href="imagine.php">IMAGINE</a>
 
@@ -152,9 +152,9 @@ TRY</a>
 
 href="shop.php"
 
-  onmouseover="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');"
+  onmouseover="playSound('http://localhost/GuitarBuddy/media/String3G.mp3');"
  
-  onclick="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');">
+  onclick="playSound('http://localhost/GuitarBuddy/media/String3G.mp3');">
  
 
 SHOP</a>
@@ -181,9 +181,9 @@ SHOP</a>
 
 href="learn.php"
 
-   onmouseover="playSound('http://localhost/GuitarBuddy/media/String2B.mp3');"
+   onmouseover="playSound('http://localhost/GuitarBuddy/media/String4D.mp3');"
  
-  onclick="playSound('http://localhost/GuitarBuddy/media/String2B.mp3');">
+  onclick="playSound('http://localhost/GuitarBuddy/media/String4D.mp3');">
 
 LEARN</a>
 
@@ -206,9 +206,9 @@ LEARN</a>
 
 href="share.php"
 
-  onmouseover="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');"
+  onmouseover="playSound('http://localhost/GuitarBuddy/media/String5A.mp3');"
  
-  onclick="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');">
+  onclick="playSound('http://localhost/GuitarBuddy/media/String5A.mp3');">
  
 
 SHARE</a>
@@ -254,8 +254,8 @@ MORE</a>
 <div class = "string" id = "s1" ><a 
  
     href="#"
-  onmouseover="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');"
-  onclick="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');">_______________________________________________________________________________________
+  onmouseover="playSound('http://localhost/GuitarBuddy/media/String1E.mp3');"
+  onclick="playSound('http://localhost/GuitarBuddy/media/String1E.mp3');">_______________________________________________________________________________________
   
 </a>
 
@@ -265,8 +265,8 @@ MORE</a>
 <div class = "string" id = "s2" ><a 
  
     href="#"
-  onmouseover="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');"
-  onclick="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');">_______________________________________________________________________________________
+  onmouseover="playSound('http://localhost/GuitarBuddy/media/String2B.mp3');"
+  onclick="playSound('http://localhost/GuitarBuddy/media/String2B.mp3');">_______________________________________________________________________________________
   
 </a>
 </div>
@@ -274,8 +274,8 @@ MORE</a>
 <div class = "string" id = "s3" ><a 
  
     href="#"
-  onmouseover="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');"
-  onclick="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');">_______________________________________________________________________________________
+  onmouseover="playSound('http://localhost/GuitarBuddy/media/String3G.mp3');"
+  onclick="playSound('http://localhost/GuitarBuddy/media/String3G.mp3');">_______________________________________________________________________________________
   
 </a>
 </div>
@@ -283,8 +283,8 @@ MORE</a>
 <div class = "string"  id = "s4" ><a 
  
     href="#"
-  onmouseover="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');"
-  onclick="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');">_______________________________________________________________________________________
+  onmouseover="playSound('http://localhost/GuitarBuddy/media/String4D.mp3');"
+  onclick="playSound('http://localhost/GuitarBuddy/media/String4D.mp3');">_______________________________________________________________________________________
   
 </a>
 </div>
@@ -292,8 +292,8 @@ MORE</a>
 <div class = "string"  id = "s5" ><a 
  
     href="#"
-  onmouseover="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');"
-  onclick="playSound('http://localhost/GuitarBuddy/media/String6E.mp3');">_______________________________________________________________________________________
+  onmouseover="playSound('http://localhost/GuitarBuddy/media/String5A.mp3');"
+  onclick="playSound('http://localhost/GuitarBuddy/media/String5A.mp3');">_______________________________________________________________________________________
   
 </a>
 </div>

@@ -1,36 +1,8 @@
 <?php include 'header.php'?>
 
-	<div data-role="content">	
-	
-<ul>
+<?php include 'learnlis.php'?>
 
-<li>
-
-<a
-
-	data-ajax="false"
-	
-href="productList.php" >Product List</a></li>
-
-
-<li>
-
-<a
-
-	data-ajax="false"
-	
-	
-
-
-href="productCatalog.php" >ProductCatalog</a></li>
-
-
-
-
-</ul>
-	
-	
-	</div><!-- /content -->
+</div><!-- /content -->
 	
 <?php include 'footer.php'?>	
 	
