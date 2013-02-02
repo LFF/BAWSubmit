@@ -1,0 +1,90 @@
+
+
+li > ul{
+	
+	
+	list-style-type:none;
+	
+   
+   position:absolute;
+
+   left:-9999px;
+   
+   
+   
+   
+
+
+
+   background-color: white;
+   
+   
+   width:400px;
+   height:20px;
+  
+}
+
+
+li ul > li{
+
+   padding-top: 3px;
+ 
+   
+   }
+
+
+
+
+#sp_imagine 
+
+{
+   width:400px;
+   height:400px;
+   
+   
+   
+   color: red;
+  
+  
+}
+	
+	
+	
+.A400x400 
+
+{
+	
+   width:400px;
+   height:400px;
+   
+   
+   color: red;
+  
+   
+  
+}
+	
+
+.floatL
+
+{
+	
+ float:left;	
+ 
+	
+}
+
+
+
+.floatR
+
+{
+	
+ float:right;	
+   margin-right:15px;   
+ 
+ 
+	
+}
+
+

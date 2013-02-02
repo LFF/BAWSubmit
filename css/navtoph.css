@@ -1,0 +1,118 @@
+.main1    {
+        vertical-align: middle;
+   
+}
+
+.main1 li{
+
+      display:inline;
+      margin-right:15px;      
+}
+
+
+
+.main1 a {
+
+   padding: 1px;
+   font-size: 14px;
+   color: black;
+
+   text-decoration:none;
+   
+ 
+   
+  
+}
+
+
+
+.main1 li:hover a{
+	
+	
+    color: #a23915;
+   
+}
+
+
+.main1 li{
+
+   position:relative;
+   
+   
+
+}
+
+
+
+li > ul{
+	
+	
+	list-style-type:none;
+	   
+   position:absolute;
+
+   left:-9999px;
+
+   background-color:#FCDA9E;
+
+     
+   width:350px;
+   height:40px;
+   
+   
+	
+   border-radius: 7px;
+	
+   
+  
+}
+
+
+li ul > li{
+
+   padding-top: 3px;
+ 
+   
+   }
+
+
+
+.main1 ul a{
+
+   white-space:nowrap;
+   
+   
+   
+}
+
+
+.main1 li:hover ul {
+   left:0;
+
+}
+
+
+
+
+
+.main1 li:hover ul a{
+
+   text-decoration:none;
+   
+   
+    color: salmon;
+   
+     
+   
+   
+   
+}
+
+
+.main1 li:hover ul a:hover{
+
+   color: red;
+     
+  
+}
+

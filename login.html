@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sound &mdash; Scriptaculous Documentation</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
+  <link rel="stylesheet" href="/scriptaculous/css/docs.css" media="screen" />
+  <link href="http://github.com/madrobby/scriptaculous/commits/master.atom" rel="alternate" title="Recent Commits to scriptaculous:master" type="application/atom+xml" />
+  <meta name="description" content="script.aculo.us is an open-source JavaScript framework for visual effects and interface behaviours." />
+</head>
+<body>
+<div id="header">
+  <div id="internal">
+  <h2 id="logo" onclick="location.href='/scriptaculous/'"><a href="/scriptaculous/">script.aculo.us</a></h2>
+  <ul id="navbar">
+    <li><a href="http://script.aculo.us/">Scriptaculous Home</a></li>
+    <li><a href="/scriptaculous/">Documentation Home</a></li>
+    <li><a href="/scriptaculous/contribute">Contribute</a></li>
+  </ul>
+  </div>
+</div>
+
+<div id="content">
+  <h1 id="page-title">Sound</h1>
+  <div id="wiki">
+    <div class="wikistyle">
+<link rel="stylesheet" title="Sunburst" href="http://script.aculo.us/github/styles/sunburst.css" />
+<script type="text/javascript" src="http://script.aculo.us/prototype.js"></script><script type="text/javascript" src="http://script.aculo.us/scriptaculous.js"></script><h2>Introduction</h2>
+<p>Use <code>Sound</code> to play audio directly from the browser.</p>
+<h2>Syntax</h2>
+<pre><code class="javascript">Sound.play( url, [ options ])
+Sound.enable() 
+Sound.disable()
+</code></pre>
+<h2>Play Options</h2>
+<table>
+<tr>
+<th>Option </th>
+<th>Description </th>
+</tr>
+<tr>
+<td> replace</td>
+<td> replace the current active track, defauts to <code>false</code> </td>
+</tr>
+</table>
+<h2>Notes</h2>
+<ul>
+<li>Sound.disable does not disable the playback immediately, it just prevents the next tracks from being played.<br />
+Watch the demo to see how to stop the sound immediately.</li>
+<li>Sound.enable does not resume the playback, just allows the next track to be played.</li>
+<li>In Firefox 3, Sound does not work from local files, but works if served (even from localhost).  As an alternative, you can change the template within sound.js from &#8220;object&#8221; to &#8220;embed&#8221; and from &#8220;data&#8221; to &#8220;src&#8221;.</li>
+</ul>
+<h2>Demo</h2>
+<div class="demo">
+    URL: <input type="text" id="sound_demo_track_url" style="width:400px;" value="http://www.joshwoodward.com/mp3/TheSimpleLife/JoshWoodward-TheSimpleLife-101-HeritagePlace.mp3" />
+<br />
+    Sound: <span id="sound_status">On</span>
+<ul class="sound_controls">
+<li><a href="javascript:void(0)" id="sound_demo_play">Play</a></li>
+<li><a href="javascript:void(0)" id="sound_demo_disable">Disable sound</a></li>
+<li><a href="javascript:void(0)" id="sound_demo_disable_now">Disable now</a></li>
+<li><a href="javascript:void(0)" id="sound_demo_enable">Enable sound</a></li>
+</ul>
+</div>
+<script type="text/javascript">
+  $('sound_demo_play').observe('click', function(event) {
+       event.stop();
+       Sound.play($('sound_demo_track_url').value,{replace:true});
+   });
+  
+  $('sound_demo_enable').observe('click', function(event) {
+       event.stop();
+       Sound.enable();
+     $('sound_status').innerHTML = 'On';
+   });
+
+  $('sound_demo_disable').observe('click', function(event) {
+       event.stop();
+       Sound.disable();
+     $('sound_status').innerHTML = 'Pending Off';
+   });
+
+  $('sound_demo_disable_now').observe('click', function(event) {
+       event.stop();
+       Sound.enable();
+       Sound.play('',{replace:true});
+       Sound.disable();
+     $('sound_status').innerHTML = 'Off';
+   });
+
+</script>
+<h3>Source code of the demo</h3>
+<pre><code class="html">
+&lt;div&gt;
+    URL: &lt;input type = "text" id = "sound_demo_track_url" style = "width:400px;" 
+    value = "http://www.joshwoodward.com/mp3/TheSimpleLife/JoshWoodward-TheSimpleLife-101-HeritagePlace.mp3"/&gt;
+    &lt;br/&gt;
+    Sound: &lt;span id = "sound_status"&gt;On&lt;/span&gt;
+    &lt;ul class = "sound_controls"&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)" id="sound_demo_play"&gt;Play&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)" id="sound_demo_disable"&gt;Disable sound&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)" id="sound_demo_disable_now"&gt;Disable now&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)" id="sound_demo_enable"&gt;Enable sound&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="javascript">
+
+&lt;script type="text/javascript"&gt;
+  $('sound_demo_play').observe('click', function(event) {
+       event.stop();
+       Sound.play($('sound_demo_track_url').value,{replace:true});
+   });
+  
+  $('sound_demo_enable').observe('click', function(event) {
+       event.stop();
+       Sound.enable();
+     $('sound_status').innerHTML = 'On';
+   });
+
+  $('sound_demo_disable').observe('click', function(event) {
+       event.stop();
+       Sound.disable();
+     $('sound_status').innerHTML = 'Pending Off';
+   });
+
+  $('sound_demo_disable_now').observe('click', function(event) {
+       event.stop();
+       Sound.enable();
+       Sound.play('',{replace:true});
+       Sound.disable();
+     $('sound_status').innerHTML = 'Off';
+   });
+
+&lt;/script&gt;
+
+</code></pre>
+<script type="text/javascript" src="http://script.aculo.us/github/highlight.js"></script><script type="text/javascript">
+  hljs.initHighlightingOnLoad.apply(null, hljs.ALL_LANGUAGES);
+</script>
+</div>
+  </div>
+
+  <div id="sidebar">
+    <h3>Pages</h3>
+    <ul id="nav">
+    
+      
+        <li><a href="/scriptaculous/ajax-autocompleter/" class="">Ajax.Autocompleter</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/ajax-inplacecollectioneditor/" class="">Ajax.InPlaceCollectionEditor</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/ajax-inplaceeditor/" class="">Ajax.InPlaceEditor</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/autocompleter-base/" class="">Autocompleter.Base</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/autocompleter-local/" class="">Autocompleter.Local</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/behaviours/" class="">Behaviours Overview</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/builder/" class="">Builder</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/combination-effects/" class="">Combination Effects</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/combination-effects-demo/" class="">Combination Effects Demo</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/contribute/" class="">Contribute</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/controls/" class="">Controls Overview</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/core-effects/" class="">Core Effects Overview</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/demos/" class="">Demos</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/draggable/" class="">Draggable</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/draggables-object/" class="">Draggables Object</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/droppables/" class="">Droppables</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-appear/" class="">Effect.Appear</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-blinddown/" class="">Effect.BlindDown</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-blindup/" class="">Effect.BlindUp</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-dropout/" class="">Effect.DropOut</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-fade/" class="">Effect.Fade</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-fold/" class="">Effect.Fold</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-grow/" class="">Effect.Grow</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-highlight/" class="">Effect.Highlight</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-methods/" class="">Effect.Methods</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-morph/" class="">Effect.Morph</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-move/" class="">Effect.Move</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-multiple/" class="">Effect.multiple</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-opacity/" class="">Effect.Opacity</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-parallel/" class="">Effect.Parallel</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-puff/" class="">Effect.Puff</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-pulsate/" class="">Effect.Pulsate</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-queues/" class="">Effect Queues</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-scale/" class="">Effect.Scale</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-scrollto/" class="">Effect.ScrollTo</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-shake/" class="">Effect.Shake</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-shrink/" class="">Effect.Shrink</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-slidedown/" class="">Effect.SlideDown</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-slideup/" class="">Effect.SlideUp</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-squish/" class="">Effect.Squish</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-switchoff/" class="">Effect.SwitchOff</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-tagifytext/" class="">Effect.tagifyText</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-toggle/" class="">Effect.toggle</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-transitions/" class="">Effect.Transitions</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effect-tween/" class="">Effect.Tween</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/effects/" class="">Effects Overview</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/faq/" class="">FAQ</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/form-element-delayedobserver/" class="">Form.Element.DelayedObserver</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/in-place-editing/" class="">In Place Editing</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/license/" class="">License</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/list-morph-demo/" class="">List Morph Demo</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/puzzle-demo/" class="">Puzzle Demo</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/ruby-on-rails/" class="">Ruby on Rails</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/slider/" class="">Slider</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/sortable/" class="">Sortable</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/sortable-create/" class="">Sortable.create</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/sortable-lists-demo/" class="">Sortable Lists Demo</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/sortable-sequence/" class="">Sortable.sequence</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/sortable-serialize/" class="">Sortable.serialize</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/sortables/" class="">Sortables</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/sortables-create/" class="">Sortables.create</a></li>
+      
+    
+      
+        <li>Sound</li>
+      
+    
+      
+        <li><a href="/scriptaculous/style-guide/" class="">Style Guide</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/tabs/" class="">Tabs</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/test-unit/" class="">Test.Unit</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/test-unit-assertions/" class="">Test.Unit.Assertions</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/test-unit-logger/" class="">Test.Unit.Logger</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/test-unit-runner/" class="">Test.Unit.Runner</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/test-unit-testcase/" class="">Test.Unit.Testcase</a></li>
+      
+    
+      
+        <li><a href="/scriptaculous/unit-testing/" class="">Unit Testing</a></li>
+      
+    
+    </ul>
+    
+    <a href='https://developer.mozilla.org/en/JavaScript/Reference' title='JavaScript documentation, JavaScript reference, JS docs, JS reference, JS API, Javascript API, JavaScript' style="color:#fff;text-decoration:none"><img src='http://static.jsconf.us/promotejshs.png' height='150' width='180' alt='JavaScript JS Documentation'/><br/>JavaScript documentation, JavaScript API</a>
+  </div>  
+  <div id="footer">
+    <p>script.aculo.us was created by <a href="http://mir.aculo.us/">Thomas Fuchs</a>,
+    and is extended and improved by open-source contributors.
+    script.aculo.us is released under the <a href="http://madrobby.github.com/scriptaculous/license/">MIT license</a>.</p>
+  </div>
+</div>
+
+<script src="http://static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">clicky.init(66350389);</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/66350389ns.gif" /></p></noscript>
+</body>
+</html>
+

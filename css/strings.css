@@ -1,0 +1,66 @@
+.string {
+
+width: 800px;
+height: 35p;
+border-radius: 15px;
+margin-top:85px;
+margin-bottom:85px;
+font-size: 15px;
+
+}
+
+.string a:link {
+	opacity: 0.0;
+	 }
+
+.string a:visited {
+	  
+	opacity: 0.0;
+   }
+
+
+
+#s1 { 
+		
+	background-color: #321a0b;
+	
+	 }
+
+#s2 { 
+	
+	
+	background-color: #532c13;
+	
+ }
+
+
+
+
+#s3 { 
+		
+	background-color: #743d1a; }
+
+	
+
+#s4 {
+	
+	background-color: #964e22; }
+	
+	
+
+#s5 {
+	
+	background-color: #b7602a;
+	
+	
+	 }
+	
+
+#s6 { 
+	
+	background-color: #d27337;
+	
+	 }
+
+
+

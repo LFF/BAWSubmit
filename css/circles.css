@@ -1,0 +1,594 @@
+
+/* .circles /
+/* used in main home page   */
+/* creates a circle outline with border */
+/* about 150 px in diameter */
+
+
+.circles {			
+    border: 4px solid #FCDA9E;   
+    width: 150px;	
+	height: 150px;	
+   border-radius: 150px;
+	
+   text-decoration: none;         
+    position:absolute;    
+	z-index: 50;
+	
+	
+}
+
+/* .sCircles /
+/* used in sub pages   */
+/* creates a circle outline with border */
+/* about 200 px in diameter */
+
+
+.sCircles {		
+
+	  width: 200px;
+
+	height: 200px;
+	
+   border-radius: 150px;
+	
+   text-decoration: none;
+      
+   top: -15px;
+   left: 0px;
+   
+    position:absolute;
+    
+      display:inline;
+      
+          z-index: 50;
+          
+    border: 4px solid #FCDA9E;
+ 
+	
+	
+}
+
+
+.sRectangle {		
+
+	  border-radius: 25px;
+	
+	
+	  width: 200px;
+
+	height: 200px;
+	
+   text-decoration: none;
+      
+   top: -15px;
+   left: 0px;
+   
+    position:absolute;
+    
+      display:inline;
+      
+    border: 4px solid #FCDA9E;
+ 
+           z-index: -5;
+        
+	
+}
+
+
+
+
+
+.mCircles {
+			
+    border: 4px solid #FCDA9E;
+   
+   border-radius: 150px;
+	
+   text-decoration: none;
+   
+    position:absolute;
+    
+	z-index: 50;
+	
+    width: 100px;
+	
+	height: 100px;
+	
+      display:inline;
+      
+}
+
+
+.contactmap {
+	  
+    border: 4px solid #FCDA9E;
+		
+    width: 250x;
+	
+	height: 250px;
+	
+   border-radius: 15px;
+	
+   text-decoration: none;
+   
+   top: 25px;
+   left: 25px;
+   
+      
+    position:absolute;
+    
+	z-index: 50;
+	
+	
+	
+}
+
+.circlesv2 {
+				  
+    position:absolute;
+    
+}
+
+
+
+.shcircles {
+	
+	width: 10px;
+		
+	height: 10px;
+	
+   text-decoration: none;  
+    
+      position:absolute;  
+        
+          left:1px;   
+           
+      display:inline; 
+           
+          z-index: 45;	
+	
+}
+
+/* creates a frame for the li under the uls */
+/* first level */
+
+
+.circlesA li > ul{
+		
+   list-style-type:none;
+   position:absolute;
+   left:-9999px;
+         
+   background-color: #FCDA9E; 
+       
+    border: 4px solid #FCDA9E;
+   
+    width: 150px;
+	height: 60px;
+	
+   border-radius: 15px;
+	
+   padding: 20px;
+   padding-top: 10px;
+ 
+   
+  
+}
+
+
+/* creates a spacing  */
+/* second level*/
+
+.circlesA li ul > li{
+	
+	 
+   padding-top: 3px;
+   padding-left: 7px;
+   
+   
+   }
+
+
+/* inline  */
+/* */
+
+
+.circlesA li{
+		
+
+      display:inline;
+      
+ 
+
+}
+
+
+/* the anchor text and format  */
+/* */
+
+.circlesA a {
+
+   padding: 1px;
+   
+   z-index:90;
+    
+   font-size:12px;
+      
+	color: #a23915;
+   text-decoration:none;
+   
+  
+}
+
+
+/* the anchor link hover and format  */
+/* */
+
+.circlesA li:hover a{
+
+   color: #a23915;
+   
+     
+
+}
+
+
+/* the li position will be reatiave  */
+/* */
+
+.circlesA li{
+	
+   position:relative;
+        
+
+}
+
+
+/* stays straight */
+/* */
+.circlesA  ul a{
+	
+	
+   white-space:nowrap;
+
+   
+   
+}
+
+
+
+/* second level hover color  */
+/* */
+
+.circlesA li:hover ul a:hover{
+
+   color: red;
+      
+  
+}
+
+
+/* second level ul ancher color */
+/* */
+.circlesA li:hover ul a{
+
+   text-decoration:none;
+   color: salmon;
+   
+}
+
+
+/* defaul placement of image to be used for cirlcles */
+/* */
+#imagine    {
+			
+ background-image: url("../images/imaginesmall.jpg"); 
+		
+   top: -70px;
+   left: 0px;
+   
+}
+
+
+/* defines the size and placement of individual images */
+/* */
+
+#spImagine    {
+		
+ background-image: url("../images/imaginesmall.jpg"); 
+ 
+  
+}
+
+
+/* placement of li and ul for respective image */
+/* */
+
+#imagineA li:hover ul {
+		
+   top:-35px; 
+   left:130px;
+
+}
+
+
+
+/* placement of image for mobile web */
+/* */
+
+#mImagine    {
+		
+ background-image: url("../images/imagine100.png"); 
+ 
+   top: 50px;
+   left: 40px;
+   
+}
+
+
+
+/* same pattern for the other circles as above except */
+/* for image name and position changes */
+
+/* try  */
+/*  */
+
+
+
+#try    {
+		
+ background-image: url("../images/trysmall.jpg"); 
+       
+    top: 15px;
+   left: 525px;
+   
+   
+
+}
+
+
+#spTry    {
+		
+ background-image: url("../images/trysmall.jpg"); 
+   
+   
+
+}
+
+
+#tryA li:hover ul {
+		
+   top:50px; 
+   left:380px;
+	
+
+}
+
+#mTry    {
+		
+ background-image: url("../images/try100.png"); 
+   
+   top: 100px;
+   left: 200px;
+   
+
+}
+
+/* shop  */
+/*  */
+
+
+
+
+
+#shop    {
+
+		
+ background-image: url("../images/shopsmall.jpg"); 
+ 
+   position:absolute;
+    
+ 
+   top: 120px;
+   left: 235px;
+   
+   
+}
+
+#spShop   {
+
+		
+ background-image: url("../images/shopsmall.jpg"); 
+ 
+   
+
+}
+
+
+#shopA li:hover ul {
+		
+   top:170px; 
+   left:370px;
+	
+
+}
+
+
+#mShop    {
+
+ background-image: url("../images/shop100.png"); 
+ 
+   top: 170px;
+   left: 40px;
+      
+}
+
+
+
+/* learn  */
+/*  */
+
+
+
+
+#learn    {
+
+		
+ background-image: url("../images/learnsmall.jpg"); 
+ 
+    position:absolute;
+    
+    
+   top:220px; 
+    left:5px;
+    
+   
+   
+}
+
+
+
+
+#spLearn    {
+
+		
+ background-image: url("../images/learnsmall.jpg"); 
+ 
+}
+
+
+
+
+
+#learnA li:hover ul {
+	
+	
+   top:295px; 
+   left:135px;
+	
+	
+
+}
+
+
+#mLearn    {
+
+ background-image: url("../images/learn100.png"); 
+ 
+    
+   top:240px; 
+    left:200px;
+    
+   
+   
+}
+
+
+
+/* share  */
+/*  */
+
+
+#share    {
+
+		
+ background-image: url("../images/sharesmall.jpg"); 
+    position:absolute;
+    
+    top: 325px;
+   left: 525px;
+   
+    
+   
+
+}
+
+
+
+#spShare    {
+
+		
+ background-image: url("../images/sharesmall.jpg"); 
+ 
+
+
+}
+
+
+#shareA li:hover ul {
+			
+   top:355px; 
+   left:385px;
+	
+
+}
+
+
+#mShare    {
+ background-image: url("../images/share100.png"); 
+ 
+ 
+    top: 280px;
+   left: 40px;
+
+}
+
+
+
+/* more  */
+/*  */
+
+#more    {
+		
+ background-image: url("../images/moresmall.jpg"); 
+  position:absolute;
+   top: 425px;
+   left: 235px;
+   
+}
+
+
+
+#spMore    {
+
+		
+ background-image: url("../images/moresmall.jpg"); 
+ 
+ 
+}
+
+#moreA li:hover ul {
+		
+   top:495px; 
+   left:370px;
+	
+
+}
+
+/* contact   */
+/*  */
+
+#spContact    {
+
+    width: 250px;
+	
+	height: 250px;
+	
+   border-radius: 150px;
+	
+   text-decoration: none;
+   
+    position:absolute;
+    
+    
+   top: -15px;
+   left: 0px;
+   
+      display:inline;
+      
+          z-index: 50;
+
+
+}
+
